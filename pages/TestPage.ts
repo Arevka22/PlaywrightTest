@@ -1,7 +1,6 @@
 import { Page, Locator } from '@playwright/test';
 
 export class TestPage {
-  
   private readonly url = 'https://qa1.intaker.xyz/home/widget/qa1/demo.html';
   public callUsButton: Locator;
   public requestPopup: Locator;
