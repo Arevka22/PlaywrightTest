@@ -1,7 +1,6 @@
 import { test, expect, APIRequestContext, Page } from '@playwright/test';
 import { TestPage } from '../pages/TestPage';
 
-
 test.describe('"Call Us" widget functionality check', () => {
   let testPage: TestPage;
 
@@ -39,7 +38,6 @@ test.describe('"Call Us" widget functionality check', () => {
       maxDiffPixelRatio: 0.1, // 10% difference allowed
     });
   });
-  
 });
 
 //*********** API test example ************/
@@ -58,5 +56,4 @@ test.describe('API tests', () => {
     expect(Array.isArray(responseJson)).toBeTruthy();   
     expect(responseJson.length).toBe(250);   
   });
-
 });
