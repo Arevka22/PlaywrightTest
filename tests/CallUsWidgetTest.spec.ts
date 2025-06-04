@@ -12,7 +12,7 @@ test('"Call Us" button visibility check', async () => {
   await expect(testPage.callUsButton).toBeVisible();
 });
 
-test('Fill form with valid values check', async () => {
+test('@now Fill form with valid values check', async () => {
   await testPage.callUsButtonIsVisible();
   await testPage.clickCallUsButton();
   await expect(testPage.requestPopup).toBeVisible();
